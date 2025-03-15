@@ -39,7 +39,8 @@ apt install -y zoxide
 apt install -y eza
 apt install -y nnn
 apt install -y bat
-apt install -y zsh-completions
+wget "https://download.opensuse.org/repositories/shells:/zsh-users:/zsh-completions/xUbuntu_22.04/amd64/zsh-completions_0.34.0-1+2.1_amd64.deb"
+dpkg -i "zsh-completions_0.34.0-1+2.1_amd64.deb"
 apt install -y git-delta
 git config --global core.pager delta
 git config --global interactive.diffFilter 'delta --color-only'
